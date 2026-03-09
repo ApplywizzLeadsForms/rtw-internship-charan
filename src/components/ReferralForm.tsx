@@ -36,7 +36,7 @@ const countries = [
   "Zambia", "Zimbabwe"
 ];
 
-export default function InstagramReferralForm({ reelSource = "rtw-pujitha-500" }: { reelSource: string }) {
+export default function InstagramReferralForm({ reelSource = "rtw-internship-charan" }: { reelSource: string }) {
   const { toast } = useToast();
 
   const [formData, setFormData] = useState({
@@ -104,34 +104,24 @@ export default function InstagramReferralForm({ reelSource = "rtw-pujitha-500" }
         headers: { "Content-Type": "application/json", "authorization": `Bearer ${supabaseKey}` },
         body: JSON.stringify({
           to: email, // Send email to the client's email address
-          subject: "Here Are the 500+ AI Projects 👇",
+          subject: "Internship Links for You",
          htmlBody: `
   <p>Hi ${fullName}!</p>
 
   <p>Thanks for commenting on the reel.</p>
 <p>
-As promised, here’s the collection of 500+ AI Projects (from basic to advanced):<br>
-🔗 <a href="https://github.com/ashishpatel26/500-AI-Agents-Projects">https://github.com/ashishpatel26/500-AI-Agents-Projects</a>
+Our team will reach out to you soon with the website link mentioned in the video.
+Till then, please take these internship links from Top companies as a small bonus to start exploring opportunities:
 </p>
 
 <p>
-In today’s U.S. job market, just listing skills on a resume isn’t enough — what truly stands out is proof of work.
-These projects help you build that proof.
+
+ <a href="https://www.goldmansachs.com/careers/students/programs-and-internships/americas/2026-summer-analyst-program?utm_source=chatgpt.com">internship link</a>
+  <a href="https://summerofcode.withgoogle.com/">internship link</a>
 </p>
 
 <p>
-But here’s something important:<br>
-Projects show your skills.<br>
-How you present them to recruiters matters even more.
-</p>
-
-<p>
-If you'd like to see how candidates are showcasing their projects inside a Digital Resume format, fill out this short form below:<br>
-📝 <a href="https://lead-funnel-cms-form.vercel.app/?s=WKPIB">Form link</a>
-</p>
-
-<p>
-We’ll share the sample Digital Resume template with you.<br>
+Best regards,
 – Team Ready to Work
 </p>
 
